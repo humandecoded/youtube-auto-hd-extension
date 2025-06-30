@@ -1,17 +1,27 @@
 {
   "manifest_version": 3,
   "name": "YouTube Auto HD",
+  "description": "Automatically switch YouTube videos to the highest available quality.",
   "version": "1.0",
-  "description": "Automatically selects the highest video resolution on YouTube.",
-  "permissions": ["storage", "scripting"],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*",
+    "*://youtube.com/*"
+  ],
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
-      "js": ["content.js"],
-      "run_at": "document_idle"
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://youtube.com/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false,
+      "match_about_blank": false
     }
-  ],
-  "action": {
-    "default_popup": "popup.html"
-  }
+  ]
 }
