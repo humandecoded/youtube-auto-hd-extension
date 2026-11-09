@@ -3,6 +3,12 @@
   "name": "YouTube Auto HD",
   "description": "Automatically switch YouTube videos to the highest available quality.",
   "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-auto-hd@tomhocker.local",
+      "strict_min_version": "128.0"
+    }
+  },
   "permissions": [
     "storage"
   ],

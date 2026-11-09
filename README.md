@@ -9,3 +9,9 @@ If you're on Desktop, you likely want the highest quality stream possible. Even 
 * In your Chromium based browser, navigate to `chrome://extensions`
 * Enable `Developer mode`
 * `Load Unpacked` and select the folder you just cloned
+
+### Firefox
+* Clone this repo
+* Navigate to `about:debugging#/runtime/this-firefox`
+* `Load Temporary Add-on...` and select `manifest.json` from the cloned folder
+* Temporary add-ons are removed on restart; for a permanent install, the extension must be signed via addons.mozilla.org

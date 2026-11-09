@@ -1,0 +1,4 @@
+.DS_Store
+*.zip
+CLAUDE.md
+.claude/settings.local.json
